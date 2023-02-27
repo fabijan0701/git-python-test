@@ -23,5 +23,5 @@ class Graph:
         i1 = self.vertices.index(v1)
         i2 = self.vertices.index(v2)
 
-        self.vertices[i1].neighbours.append(i2)
-        self.vertices[i2].neighbours.append(i1)
+        self.vertices[i1].neighbours.append(self.vertices[i1])
+        self.vertices[i2].neighbours.append(self.vertices[i2])
